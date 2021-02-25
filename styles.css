@@ -128,13 +128,21 @@ ul {
   .main-menu {
     width: 100%;
   }
+
   .menu-begin {
     position: absolute;
     right: 5%;
+    width: 10%;
   }
+
   .main-a {
     text-align: center;
   }
+
+  .a {
+    width: 10%;
+  }
+
 }
 
 /******        HEADER      ************/
