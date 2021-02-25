@@ -254,7 +254,7 @@ h1 {
   .pad {
     display: flex;
     flex-direction: column;
-}
+    }
   .pad-block {
     width: 100%;
     }
@@ -262,6 +262,13 @@ h1 {
       width: 100%;
       margin-left: 5%;
       font-size: 2.5rem;
+    }
+    .pad-pad {
+      padding: 0;
+    }
+    .pad-block {
+      width: 100%;
+      margin: 1%;
     }
   }
 
@@ -291,9 +298,14 @@ h1 {
   }
   .devices-text {
     width: 100%;
+    margin: 1%;
   }
   .devices-block {
     width: 100%;
+  }
+  .devices-block {
+    width: 100%;
+    margin: 1%;
   }
 }
 
@@ -336,7 +348,6 @@ h1 {
 .block-netflix {
   background-color: #E6D5EB;
   width: 48%;
-  height: 100%;
   margin: 0 2% 0 0;
   display: flex;
   flex-direction: column;
@@ -350,6 +361,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 95%;
+    margin: 35px auto;
   }
 }
 
@@ -379,6 +391,7 @@ h1 {
     display: flex;
     flex-direction: column;
     width: 95%;
+    margin: 35px auto;
   }
 }
 
@@ -409,6 +422,7 @@ h1 {
   }
   .panel-block {
     width: 100%;
+    margin: 1%;
   }
   .panel-text {
     width: 100%;
@@ -502,7 +516,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .social-links {
-    text-align: center;
+    text-align: right;
     width: 70%;
   }
 }
