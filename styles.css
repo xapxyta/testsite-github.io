@@ -4,32 +4,84 @@ body {
   margin: 0;
   color: #393838;
   width: 100%;
+  height: 100%;
 }
 
-img {
-  background-color: #D9D9D9;
+/******        NAVIGATION      **********/
+
+.logo-a {
+  margin: 0;
+  width: 100%;
 }
 
-.logo {
-  margin: 20px 20px;
+.a {
+  width: 6%;
+}
+
+.logo-b {
+  margin: 0;
+  width: 50%;
+  display: inline;
 }
 
 .main-a {
-  font-size: 2.2rem;
-  margin: 20px 200px 20px 10px;
+  font-size: 2.1em;
+  margin: 0 9% 0 3%;
 }
 
 .nomain-a {
-  font-size: 1.8rem;
-  margin: 10px 40px;
+  font-size: 1.7em;
+  margin: 0 7%;
+}
+
+.drop-main-a {
+  font-size: 2em;
+}
+
+.drop-menu ul {
+  padding: 0;
+  text-align: center;
 }
 
 nav {
-  height: 20%;
   width: 100%;
-  display: flex;
-  align-items: baseline;
   background-color: #D9D9D9;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 4.6rem;
+}
+
+li {
+  margin: 0;
+}
+
+ul {
+  overflow: hidden;
+  list-style-type: none;
+  color: white;
+  margin: 0;
+}
+
+.drop-menu {
+  display: none;
+  border: 1px solid gray;
+  position: absolute;
+  background-color: white;
+  width: 20%;
+}
+
+.drop-menu hr {
+  width: 55%;
+}
+
+.drop-begin:hover .drop-menu {
+  display: inline;
+}
+
+.drop-begin {
+  display: inline-block;
 }
 
 .main-h h1, a {
@@ -37,20 +89,67 @@ nav {
    margin-bottom: 10%;
 }
 
+.main-menu {
+  display: none;
+  background-color: white;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.main-menu hr {
+  border-bottom: 4px solid white;
+  width: 55%;
+}
+
+.main-menu a {
+  display: block;
+  margin: 5% 5%;
+}
+
+.menu-begin:hover .main-menu {
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 50%;
+}
+
+.menu-begin {
+  display: inline-block;
+  width: 5.5%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .nomain-a {
+    display: none;
+  }
+}
+
+/******        HEADER      ************/
+
 .head {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80%;
+  padding: 5% 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
 }
 
 .main-h {
   text-align: left;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 35%;
   margin: 0 auto;
   font-size: 2.5rem;
-  align-items: flex-start;
   height: 100%;
 }
 
@@ -59,14 +158,19 @@ nav {
 }
 
 header {
-  text-align: center;
   width: 100%;
 }
 
 .main-img {
   display: inline-block;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-img {
+    width: 95%;
+  }
 }
 
 .phone-img {
@@ -76,7 +180,7 @@ header {
 a {
   text-decoration: none;
   color: #393838;
-  display: inline-block;
+  display: inline;
 }
 
 a:visited {
@@ -92,15 +196,21 @@ a:hover {
 }
 
 
-footer, header {
+footer {
   background-color: #D9D9D9;
-  height: 800px;
+  height: 41rem;
+}
+
+header {
+  background-color: #D9D9D9;
 }
 
 h1 {
   margin: 0;
   padding: 0;
 }
+
+/******        PAD      ************/
 
 .pad-text {
   width: 40%;
@@ -111,12 +221,30 @@ h1 {
 .pad {
   background-color: #D0D5EF;
   width: 95%;
-  height: 100%;
   margin: 35px auto;
   display: flex;
   flex-direction: row;
   border: 1px solid #A8D8EA;
 }
+
+.pad-pad {
+  padding: 3% 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .pad {
+    display: flex;
+    flex-direction: column;
+}
+  .pad-block {
+    width: 100%;
+    }
+  .pad-text {
+      width: 100%;
+      margin-left: 5%;
+      font-size: 2.5rem;
+    }
+  }
 
 .pad-block {
   width: 60%;
@@ -127,6 +255,8 @@ h1 {
   margin: 5% auto;
 }
 
+/******        DEVICES      ************/
+
 .devices {
   background-color: #CCDB97;
   width: 95%;
@@ -135,15 +265,28 @@ h1 {
   flex-direction: row;
 }
 
+@media only screen and (max-width: 600px) {
+  .devices {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .devices-text {
+    width: 100%;
+  }
+  .devices-block {
+    width: 100%;
+  }
+}
+
 .devices-text {
   width: 45%;
   margin-left: 5%;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .devices-block {
   width: 65%;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .devices-block h2 {
@@ -155,12 +298,20 @@ h1 {
   margin: 5% auto;
 }
 
+/******        FREE      ************/
+
 .block-free {
   display: flex;
   flex-direction: row;
   width: 95%;
-  margin: 35px auto;
+  margin: 0 auto;
+}
 
+@media only screen and (max-width: 600px) {
+  .block-free {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .block-netflix {
@@ -170,8 +321,17 @@ h1 {
   margin: 0 2% 0 0;
   display: flex;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .block-netflix {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 
 .block-netflix h2 {
@@ -190,8 +350,17 @@ h1 {
   margin: 0 0 0 2%;
   display: flex;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
+  padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .pear-watch {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 
 .pear-watch h2 {
@@ -200,8 +369,10 @@ h1 {
 
 .watch-img {
   width: 96%;
-  margin: 10% auto;
+  margin: 1% auto;
 }
+
+/******    SOLAR PANEL      **********/
 
 .panel {
   background-color: #DBEFEF;
@@ -212,6 +383,19 @@ h1 {
   height: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  .panel {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .panel-block {
+    width: 100%;
+  }
+  .panel-text {
+    width: 100%;
+  }
+}
+
 .panel-block {
   width: 55%;
 }
@@ -219,13 +403,15 @@ h1 {
 .panel-text {
   width: 45%;
   margin-left: 2%;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .panel-img {
   width: 85%;
   margin: 5%;
 }
+
+/******        FOOTER      ************/
 
 .copyright {
   text-align: center;
@@ -255,6 +441,13 @@ h1 {
   text-align: left;
 }
 
+@media only screen and (max-width: 600px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .link-col-1 {
   width: 30%;
   justify-content: center;
@@ -265,6 +458,14 @@ h1 {
   width: 30%;
   justify-content: center;
   margin: 0 auto;
+}
+
+.footer {
+  margin: 35px 0 0;
+  width: 100%;
+  color: #717273;
+  font-size: 1.5rem;
+  height: 100%;
 }
 
 .social-links {
@@ -280,10 +481,57 @@ h1 {
   margin: 0 auto;
 }
 
-.footer {
-  margin: 35px 0 0;
-  width: 100%;
-  color: #717273;
-  font-size: 1.5rem;
-  height: 100%;
+.anim:hover {
+  animation-name: go;
+  animation-duration: 1.5s;
+  position: relative;
+}
+
+@keyframes go {
+  0% { top: 0; }
+  50% { top: 15px; }
+  100% { top: 0; }
+}
+
+.drop-menu a {
+  color: #393838;
+}
+
+.drop-menu a:hover {
+  color: black;
+  background-color: gray;
+}
+
+.main-menu a {
+  color: #393838;
+  font-size: 2.5rem;
+}
+
+.main-menu a:hover {
+  color: black;
+  background-color: gray;
+}
+
+.btn {
+  font-size: 2.5rem;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+footer a:hover {
+  background-color: gray;
+}
+
+.d:hover {
+  background-color: #D9D9D9;
+}
+
+nav a:hover {
+  background-color: gray;
+}
+
+.c {
+  margin: 0 4% 0 0;
 }
