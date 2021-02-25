@@ -128,15 +128,9 @@ ul {
   .main-menu {
     width: 100%;
   }
-
-  nav .e {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  nav .f {
-    display: flex;
-    justify-content: center;
+  .menu-begin {
+    position: absolute;
+    right: 1%;
   }
 }
 
