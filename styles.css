@@ -130,7 +130,10 @@ ul {
   }
   .menu-begin {
     position: absolute;
-    right: 1%;
+    right: 5%;
+  }
+  .main-a {
+    text-align: center;
   }
 }
 
