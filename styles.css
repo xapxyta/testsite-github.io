@@ -115,7 +115,7 @@ ul {
 .menu-begin {
   display: inline-block;
   width: 5.5%;
-  text-align: right;
+  text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,22 +127,28 @@ ul {
     display: none;
   }
 
-  .main-menu {
-    width: 200%;
+  .menu-begin:hover .main-menu {
+    display: block;
+    position: absolute;
+    left: 0%;
+    width: 600%;
   }
 
   .menu-begin {
     position: absolute;
-    right: 5%;
+    left: 5%;
     width: 15%;
   }
 
   .main-a {
-    text-align: center;
+    position: absolute;
+    left: 30%;
   }
 
   .a {
     width: 15%;
+    position: absolute;
+    right: 1%;
   }
 
 }
@@ -162,14 +168,6 @@ ul {
   padding: 5% 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .head {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-  }
-}
-
 .main-h {
   text-align: left;
   display: flex;
@@ -177,6 +175,18 @@ ul {
   width: 35%;
   margin: 0 auto;
   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .head h1 {
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -263,30 +273,6 @@ h1 {
   padding: 3% 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .pad {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    }
-  .pad-block {
-    width: 100%;
-    }
-  .pad-text {
-      width: 95%;
-      margin-left: 5%;
-      font-size: 2.5rem;
-      display: inline-block;
-    }
-    .pad-pad {
-      padding: 0;
-    }
-    .pad-block {
-      width: 100%;
-      margin: 1%;
-    }
-  }
-
 .pad-block {
   width: 60%;
 }
@@ -295,6 +281,35 @@ h1 {
   width: 75%;
   margin: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .pad {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    }
+
+  .pad-text {
+      width: 95%;
+      margin-left: 5%;
+      font-size: 2.5rem;
+      display: inline-block;
+    }
+
+    .pad-pad {
+      padding: 0;
+    }
+
+    .pad-block {
+      width: 90%;
+      margin: 1%;
+    }
+
+    .pad-img {
+      width: 100%;
+    }
+  }
 
 /******        DEVICES      ************/
 
@@ -331,12 +346,22 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     width: 95%;
+    text-align: center;
   }
   .devices-text {
-    width: 100%;
+    width: 90%;
+    margin: 1% auto;
+    text-align: left;
   }
   .devices-block {
-    width: 100%;
+    width: 90%;
+    margin: 1% auto;
+  }
+  .devices-block h2 {
+    text-align: left;
+  }
+  .devices-img {
+    width: 100%
   }
 }
 
@@ -375,15 +400,6 @@ h1 {
   padding-bottom: 1%;
 }
 
-@media only screen and (max-width: 600px) {
-  .block-netflix {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin-bottom: 1% auto;
-  }
-}
-
 .block-netflix h2 {
     margin: 1%;
 }
@@ -391,6 +407,15 @@ h1 {
 .netflix-img {
   width: 96%;
   margin: 1% auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .block-netflix {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 35px auto;
+  }
 }
 
 .pear-watch {
@@ -404,6 +429,15 @@ h1 {
   padding-bottom: 1%;
 }
 
+.pear-watch h2 {
+  margin: 1%;
+}
+
+.watch-img {
+  width: 96%;
+  margin: 1% auto;
+}
+
 @media only screen and (max-width: 600px) {
   .pear-watch {
     display: flex;
@@ -412,15 +446,6 @@ h1 {
     margin: 0 auto;
     margin-top: 35px auto;
   }
-}
-
-.pear-watch h2 {
-  margin: 1%;
-}
-
-.watch-img {
-  width: 96%;
-  margin: 1% auto;
 }
 
 /******    SOLAR PANEL      **********/
@@ -454,14 +479,18 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     width: 95%;
+    text-align: center;
   }
 
   .panel-block {
-    width: 100%;
+    width: 90%;
+    margin: 1% auto;
   }
 
   .panel-text {
-    width: 100%;
+    width: 90%;
+    margin: 1% auto;
+    text-align: left;
   }
 }
 
