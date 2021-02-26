@@ -146,7 +146,7 @@ ul {
   }
 
   .a {
-    width: 15%;
+    width: 9%;
     position: absolute;
     right: 1%;
   }
@@ -157,6 +157,34 @@ ul {
   nav {
     font-size: 1.5rem;
   }
+  .nomain-a {
+    display: none;
+  }
+
+  .menu-begin:hover .main-menu {
+    display: block;
+    position: absolute;
+    left: 0%;
+    width: 600%;
+  }
+
+  .menu-begin {
+    position: absolute;
+    left: 5%;
+    width: 15%;
+  }
+
+  .main-a {
+    position: absolute;
+    left: 30%;
+  }
+
+  .a {
+    width: 9%;
+    position: absolute;
+    right: 1%;
+  }
+
 }
 
 /******        HEADER      ************/
@@ -413,7 +441,7 @@ h1 {
   .block-netflix {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     margin: 35px auto;
   }
 }
@@ -442,9 +470,8 @@ h1 {
   .pear-watch {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 35px auto;
+    width: 100%;
+    margin: 35px auto;
   }
 }
 
@@ -565,6 +592,14 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+  .social-links {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .social-links {
     text-align: center;
     margin: 0 auto;
