@@ -130,13 +130,13 @@ ul {
   }
 
   .main-menu {
-    width: 100%;
+    width: 200%;
   }
 
   .menu-begin {
     position: absolute;
     right: 5%;
-    width: 10%;
+    width: 15%;
   }
 
   .main-a {
@@ -144,9 +144,15 @@ ul {
   }
 
   .a {
-    width: 10%;
+    width: 15%;
   }
 
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    font-size: 2rem;
+  }
 }
 
 /******        HEADER      ************/
@@ -162,7 +168,7 @@ ul {
   .head {
     display: flex;
     flex-direction: column;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -269,9 +275,10 @@ h1 {
     width: 100%;
     }
   .pad-text {
-      width: 100%;
+      width: 95%;
       margin-left: 5%;
       font-size: 2.5rem;
+      display: inline-block;
     }
     .pad-pad {
       padding: 0;
@@ -308,15 +315,14 @@ h1 {
     width: 95%;
   }
   .devices-text {
-    width: 100%;
+    width: 150%;
     margin: 1%;
+    display: inline-block;
   }
   .devices-block {
-    width: 100%;
-  }
-  .devices-block {
-    width: 100%;
+    width: 150%;
     margin: 1%;
+    display: inline-block;
   }
 }
 
@@ -353,6 +359,13 @@ h1 {
   .block-free {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .block-free {
+      display: flex;
+      flex-direction: column;
   }
 }
 
@@ -528,8 +541,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .social-links {
-    text-align: right;
-    width: 70%;
+    text-align: left;
   }
 }
 
