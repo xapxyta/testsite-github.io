@@ -306,20 +306,6 @@ h1 {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
-  .devices {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 95%;
-  }
-  .devices-text {
-    width: 100%;
-  }
-  .devices-block {
-    width: 100%;
-  }
-}
-
 .devices-text {
   width: 55%;
   margin-left: 5%;
@@ -338,6 +324,20 @@ h1 {
 .devices-img {
   width: 70%;
   margin: 5% auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .devices {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+  .devices-text {
+    width: 100%;
+  }
+  .devices-block {
+    width: 100%;
+  }
 }
 
 /******        FREE      ************/
@@ -433,24 +433,6 @@ h1 {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
-
-  .panel {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 95%;
-  }
-
-  .panel-block {
-    width: 100%;
-    display: none;
-  }
-
-  .panel-text {
-    width: 100%;
-  }
-}
-
 .panel-block {
   width: 55%;
 }
@@ -464,6 +446,23 @@ h1 {
 .panel-img {
   width: 95%;
   margin: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .panel {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+
+  .panel-block {
+    width: 100%;
+  }
+
+  .panel-text {
+    width: 100%;
+  }
 }
 
 /******        FOOTER      ************/
